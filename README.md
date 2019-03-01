@@ -29,14 +29,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+.forEach:
+    - iterate through every single element in a list/collection
+    - every iteration can execute a function or callback using the current element as parameter
+    - returns an "undefined" at the end of the iteration
+
+.map:
+    - iterate through every single element in a list/collection
+    - every iteration can execute a function  or callback using the current element as parameter
+    - this function can return a new value that later become a new element at that iteration of a new list/collection object
+    - if the function does not return a value, the new element of that iteration will be 'undefined'
+
+    output of `.forEach` will always be undefined, while `.map` can have different outputs such as [undefined, 1, 2] or ['a', 'b', 'd']
 
 2. What is the difference between a function and a method?
+function: outside of an object
+method: functions within an object
 
-3. What is closure?
+3. What is closure? 
+when using an inner function to preserves variables of outer function's scope even after executing the outer function
 
 4. Describe the four rules of the 'this' keyword.
+- window binding: refer to the global/window object
+- 'new' keyword binding: refer to the object that the property/method is part of
+- refer to the parent object that child objects inherit from
+- explicit binding: refer to the object when using functions such as call(), bind(), apply() 
 
 5. Why do we need super() in an extended class?
+to bind to the parents class/object
 
 ## Project Set up
 
